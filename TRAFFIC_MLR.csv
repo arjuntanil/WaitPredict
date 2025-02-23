@@ -1,0 +1,22 @@
+Vehicle Count (X1),Time of Day (X2),Weather Condition (X3),Road Condition (X4),Traffic Light Wait Time (Y) - Seconds
+1,Morning,Clear,Smooth,5
+5,Morning,Rainy,Smooth,15
+10,Morning,Clear,Traffic Jam,35
+15,Afternoon,Clear,Smooth,45
+20,Afternoon,Rainy,Traffic Jam,75
+25,Evening,Foggy,Under Construction,85
+30,Evening,Clear,Smooth,90
+35,Evening,Rainy,Traffic Jam,110
+40,Night,Dust Storm,Under Construction,130
+45,Night,Clear,Smooth,140
+50,Morning,Foggy,Traffic Jam,155
+55,Afternoon,Rainy,Under Construction,170
+60,Evening,Clear,Smooth,180
+65,Night,Clear,Traffic Jam,200
+70,Morning,Rainy,Under Construction,215
+75,Afternoon,Clear,Smooth,225
+80,Evening,Dust Storm,Traffic Jam,250
+85,Night,Clear,Smooth,255
+90,Morning,Rainy,Under Construction,270
+95,Afternoon,Foggy,Traffic Jam,290
+100,Evening,Clear,Smooth,300
