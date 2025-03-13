@@ -13,7 +13,7 @@ os.makedirs("model", exist_ok=True)
 # 1. Load the MLR dataset
 dataset = pd.read_csv("TRAFFIC_MLR.csv")
 
-# 2. Separate features (X) and target (y)
+# 2. Separate   features (X) and target (y)
 #    Features: Vehicle Count, Time of Day, Weather Condition, Road Condition
 #    Target: Traffic Light Wait Time (seconds)
 X = dataset.iloc[:, :-1]  # All rows, all columns except the last
@@ -26,8 +26,8 @@ ct = ColumnTransformer(
 )
 X_encoded = ct.fit_transform(X)
 
-# 4. Split dataset into training and testing sets (70% training, 30% testing)
-x_train, x_test, y_train, y_test = train_test_split(X_encoded, y, test_size=0.3, random_state=0)
+# 4. Split dataset into training and testing sets (80% training, 20% testing)
+x_train, x_test, y_train, y_test = train_test_split(X_encoded, y, test_size=0.2, random_state=0)
 
 # 5. Train the MLR model
 regressor = LinearRegression()

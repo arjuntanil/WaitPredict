@@ -16,8 +16,8 @@ dataset = pd.read_csv('TRAFFIC_SLR.csv')
 X = dataset.iloc[:, 0:1].values  # Vehicle Count as a 2D array
 y = dataset.iloc[:, 1].values    # Traffic Light Wait Time
 
-# Split the dataset into training and testing sets (70% training, 30% testing)
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+# Split the dataset into training and testing sets (80% training, 20% testing)
+x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
 # Create and train the linear regression model
 regressor = LinearRegression()
